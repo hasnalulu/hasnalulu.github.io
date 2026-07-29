@@ -1,4 +1,5 @@
-
+console.clear();
+// script 1 - text 
 
 document.addEventListener("DOMContentLoaded", () => {
   const clones = document.querySelectorAll(".dynamic-text-clone > div");
@@ -13,13 +14,57 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.1, // Slight delay between each word
     scrollTrigger: {
       trigger: "#section-two", // Starts when section-two enters viewport
-      start: "top top", // Start when the top of the section hits the top of the viewport
-      end: "+=100%", // Animation lasts for the viewport height
+      start: "top", // Start when the top of the section hits the top of the viewport
+      end: "+=100% ", // Animation lasts for the viewport height
+      // end: "+=100%", // Animation lasts for the viewport height
       scrub: true, // Smooth synchronization with scrolling
       pin: true, // Keeps the section fixed during animation
     },
   });
+
+  // script 2 - stacking cards
+  // gsap.registerPlugin(ScrollTrigger);
+  const cardsWrappers = gsap.utils.toArray(".card-wrapper");
+  const cards = gsap.utils.toArray(".work-card");
+
+  cardsWrappers.forEach((wrapper, i) => {
+    const card = cards[i];
+    let scale = 1,
+      rotation = 0;
+    if (i !== cards.length - 1) {
+      scale = 0.9 + 0.025 * i;
+      rotation = -10;
+    }
+    gsap.to(card, {
+      scale: scale,
+      rotationX: rotation,
+      transformOrigin: "top center",
+      ease: "none",
+      scrollTrigger: {
+        trigger: wrapper,
+        // start: "top " + (60 + 10 * i),
+        start: "top " + (60 + 10 * i),
+        end: "bottom 550",
+        endTrigger: ".wrapper",
+        scrub: true,
+        pin: wrapper,
+        pinSpacing: false,
+        invalidateOnRefresh: true,
+        // markers: {
+        //     indent: 100 * i,
+        //     startColor: "#0ae448",
+        //     endColor: "#fec5fb",
+        //     fontSize: "14px"
+        // },
+        id: i + 1
+      }
+    });
+
+  });
+
+
 });
+
 
 
 
@@ -134,22 +179,4 @@ $(document).ready(function () {
 
   animate();
 
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
