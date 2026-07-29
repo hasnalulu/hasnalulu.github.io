@@ -1,0 +1,615 @@
+@media (max-width:900px) {
+
+    .work-card {
+        flex-direction: column;
+    }
+
+    .work-image,
+    .work-details {
+        width: 100%;
+    }
+
+    .work-details {
+        padding: 30px;
+    }
+
+    .work-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .work-showcase {
+        width: 95%;
+    }
+
+    .work-details {
+        padding: 22px;
+    }
+
+    .work-title {
+        font-size: 22px;
+    }
+
+    .work-text {
+        font-size: 16px;
+    }
+
+    .work-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1200px) {
+    .element {
+        position: absolute;
+        width: 120px;
+        height: 123px;
+        right: 197px;
+        top: 163px;
+        animation: move 15s linear infinite alternate-reverse;
+    }
+
+    .mockup-4 {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+        left: 31%;
+        bottom: 28%;
+        animation: round 3s linear infinite alternate-reverse;
+    }
+
+    .mockup-3 {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+        right: 31%;
+        bottom: 29%;
+        animation: change 3s linear infinite alternate-reverse;
+    }
+}
+
+@media (max-width:992px) {
+    h1 {
+        font-size: 70px;
+        font-family: 'PP Editorial';
+
+
+    }
+
+    .service-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .element {
+        width: 80px;
+        height: 80px;
+        right: 260px;
+    }
+
+    .icon-tag p {
+        font-size: 18px;
+    }
+
+    .dynamic-text-clone {
+        font-size: 42px;
+    }
+
+    .content p,
+    .small-card p {
+        color: #bdbdbd;
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .content h2,
+    .small-card h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .image img {
+        width: 150px;
+    }
+
+    .tools img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:880px) {
+    .software-section {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        flex-direction: column;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .skill-card {
+        width: 130px;
+        height: 160px;
+    }
+
+    .skill-card img {
+        width: 60px;
+    }
+
+
+    .footer-image {
+        width: 72%;
+        /* position: relative; */
+        /* display: none; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        right: 0;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px;
+        background: rgba(255, 255, 255, .08);
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        padding: 30px;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+
+    .input-set {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="tel"] {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    input[type="email"] {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .element {
+        width: 80px;
+        height: 80px;
+        right: 179px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .dynamic-text-clone {
+        font-size: 50px;
+    }
+
+    .mockup-1 {
+        top: 26%;
+    }
+
+    .mockup-2 {
+        top: 29%;
+    }
+
+    .mockup-3 {
+        right: 27%;
+        bottom: 34%;
+    }
+
+    .mockup-4 {
+        left: 28%;
+        bottom: 37%;
+    }
+
+
+}
+
+@media (min-width: 650px) and (max-width: 770px) {
+    .title {
+        margin-left: 70px;
+        margin-top: 0;
+    }
+
+    .icon-tag {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 150px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icon-tag p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:700px) {
+    .side-menu ul {
+        text-align: center;
+    }
+
+    .element {
+        width: 80px;
+        height: 80px;
+        right: 100px;
+    }
+
+    .menu-title {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin: 0px;
+        gap: 20px;
+    }
+
+    .side-menu {
+        backdrop-filter: blur(20px);
+        width: 100%;
+        align-items: center;
+        display: flex;
+        background: rgba(47, 40, 40, 0.65);
+        margin: 0px;
+        border-width: medium;
+        border-style: none;
+        border-color: currentcolor;
+        border-image: none;
+    }
+
+    .mockup-4 {
+        left: 16%;
+        bottom: 33%;
+        animation: round 3s linear infinite alternate-reverse;
+    }
+
+    .mockup-3 {
+        right: 17%;
+        bottom: 35%;
+        animation: change 3s linear infinite alternate-reverse;
+    }
+
+    .dynamic-text h2 {
+        font-family: 'AnekLatin';
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        color: FCF9E5;
+        text-align: center;
+    }
+
+    .abouts>.row {
+        flex-direction: column-reverse;
+    }
+
+    .text h2 {
+        font-size: 60px;
+
+    }
+
+    .abouts h2 {
+        font-size: 60px;
+    }
+
+    .left-content h2 {
+        font-size: 60px;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-form button {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .skill-card {
+        width: 110px;
+        height: 140px;
+    }
+
+    .skill-card img {
+        width: 50px;
+    }
+}
+
+@media (max-width:650px) {
+    h1 {
+        font-size: 45px;
+        font-family: 'PP Editorial';
+    }
+
+    h1 span:last-child {
+        margin-left: 13%;
+    }
+
+    .title {
+        margin-left: 50px;
+    }
+
+    .left-content h2 {
+        font-size: 40px;
+    }
+
+    .mockup-2 {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        object-fit: cover;
+        border-radius: 15px;
+        left: 13%;
+        top: 24%;
+        animation: rotate 3s linear infinite alternate-reverse;
+    }
+
+    .mockup-3 {
+        right: 11%;
+        bottom: 24%;
+        animation: change 3s linear infinite alternate-reverse;
+    }
+
+    .mockup-4 {
+        left: 16%;
+        bottom: 25%;
+        animation: round 3s linear infinite alternate-reverse;
+    }
+
+    .mockup-1 {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 15px;
+        position: absolute;
+        right: 11%;
+        top: 22%;
+        animation: round 3s linear infinite alternate-reverse;
+    }
+
+    .text h2 {
+        font-size: 40px;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+
+    .icon-tag {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .icons .icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224 207 207 / 25%);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+    }
+
+    .button {
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .abouts>.row {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media (max-width:550px) {
+    .element {
+        width: 70px;
+        height: 70px;
+        right: 0;
+        top: -18px;
+    }
+
+    .glass-nav {
+        display: none;
+    }
+
+    .logo-sec {
+        position: fixed;
+        z-index: 99999;
+        display: flex;
+    }
+
+    .logo-sec img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ham-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: fixed;
+        right: 50px;
+        z-index: 9999;
+    }
+
+    .left-content h2 {
+        font-size: 38px;
+    }
+
+    .mockup-1 {
+        display: none;
+    }
+
+    .mockup-2 {
+        display: none;
+    }
+
+    .mockup-3 {
+        display: none;
+    }
+
+    .mockup-4 {
+        display: none;
+    }
+
+<<<<<<< HEAD
+=======
+    /* .sction #hero,
+    #section-two,
+    #section-three,
+    #About,
+    #Services,
+    #software-section,
+    #Contact {
+        overflow-x: hidden;
+    } */
+
+>>>>>>> c2907ad3357192c95b629def0b4896de4af2b74b
+    .icons .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .button {
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .abouts>.row {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
+@media (max-width:400px) {
+
+    .skill-card {
+        width: 90px;
+        height: 110px;
+        border-radius: 18px;
+    }
+
+    .skill-card img {
+        width: 40px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 5px;
+        margin: 0;
+    }
+
+    .icons .icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224 207 207 / 25%);
+        backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+    }
+
+    .button {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'AnekLatin';
+        color: #FCF9E5;
+        background-color: #C31202;
+        width: 140px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 25px;
+        font-weight: 600;
+    }
+
+    .icon-tag p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:300px) {
+
+    .skill-card {
+        width: 75px;
+        height: 95px;
+    }
+
+    .skill-card img {
+        width: 34px;
+    }
+
+    .icons .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .button {
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+    }
+
+    .abouts>.row {
+        flex-direction: column-reverse;
+    }
+
+    .left-content h2 {
+        font-size: 35px;
+    }
+
+
+}
