@@ -498,19 +498,6 @@
         display: none;
     }
 
-<<<<<<< HEAD
-=======
-    /* .sction #hero,
-    #section-two,
-    #section-three,
-    #About,
-    #Services,
-    #software-section,
-    #Contact {
-        overflow-x: hidden;
-    } */
-
->>>>>>> c2907ad3357192c95b629def0b4896de4af2b74b
     .icons .icon {
         width: 40px;
         height: 40px;
@@ -546,6 +533,9 @@
         display: flex;
         gap: 5px;
         margin: 0;
+    }
+    .my-photo{
+        margin-top: 20px;
     }
 
     .icons .icon {
