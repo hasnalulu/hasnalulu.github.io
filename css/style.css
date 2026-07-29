@@ -979,7 +979,6 @@ input[type="email"] {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
 }
 
 .footer-info h3 {
@@ -1005,6 +1004,8 @@ input[type="email"] {
 .info h4 {
     color: #FCF9E5;
     margin: 0;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .info a {
@@ -1067,7 +1068,7 @@ input[type="email"] {
 
 .footer-image img {
     position: absolute;
-    /* bottom: 10px; */
+    bottom: 20%;
 }
 
 footer {
