@@ -603,6 +603,7 @@ label {
     overflow: hidden;
     /* transition: .4s ease; */
     margin-bottom: 20px;
+    border-top: solid 1px #383838;
 }
 
 /* .work-card:hover {
@@ -1073,4 +1074,28 @@ input[type="email"] {
 
 footer {
     margin-bottom: 50px;
+}
+
+
+/* gsap */
+.wrapper,
+.spacer{
+  width: 100%;
+  min-height: 50px;
+}
+
+.wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: dashed 2px var(--color-surface50);
+  border-bottom: dashed 2px var(--color-surface50);
+}
+
+.card-wrapper {
+  width: 100%;
+  perspective: 500px;
+  margin-bottom: 50px;
+}
+.card-wrapper:last-child {
+  margin-bottom: 0;
 }
