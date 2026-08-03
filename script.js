@@ -85,42 +85,34 @@ $(document).ready(function () {
   //   $(".menu-section").removeClass("active-menu");
   // })
 
-  const video = document.getElementById("Video");
-  video.playbackRate = 0.25; //
 
-  const navbar = document.getElementById("glassNav");
-  const scrollTopBtn = document.getElementById("scrollTop");
+ const navbar = document.getElementById("glassNav");
+const scrollTopBtn = document.getElementById("scrollTop");
 
-  // Show navbar after scrolling 5%
-  window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
 
-    const scrollTop = window.scrollY;
+  const documentHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
 
-    const documentHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent =
+    documentHeight > 0 ? (scrollTop / documentHeight) * 100 : 0;
 
-    const scrollPercent = (scrollTop / documentHeight) * 100;
+  if (navbar) {
+    navbar.classList.toggle("show", scrollPercent >= 5);
+  }
+});
 
-    if (scrollPercent >= 5) {
-      navbar.classList.add("show");
-    } else {
-      navbar.classList.remove("show");
-    }
-
-  });
-
-  // Scroll to top
-  scrollTopBtn.addEventListener("click", function (e) {
-
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-
   });
-
+}
 
 
 
